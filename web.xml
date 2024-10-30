@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Test Suite" parallel="tests" thread-count="2">
+	<test name="cyShield - Chrome">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.CyShield.webtests.ToDoWebTest"></class>
+		</classes>
+	</test>
+
+	<test name="cyShield - Firefox">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.CyShield.webtests.ToDoWebTest"></class>
+		</classes>
+	</test>
+</suite>
