@@ -105,19 +105,10 @@ Here are some key dependencies used in this project:
    > mvn test -Dsurefire.suiteXmlFiles="mobile.xml" -DdeviceName="$deviceType" -DplatformVersion="$platformVersion"
    > Replace each "$" and write the desired information
 
-   > 4- To Run Web tests:
+   > 4- To Run APIs tests:
    >```bash
    >mvn test -Dsurefire.suiteXmlFiles="api.xml"
 
    > 5- To generate allure report run the following command line:
    > ```bash
    > allure serve
-
-
-Running Tests on github actions (Optional)
-------------------------------------------
-1. go to https://github.com/khalid-moh193/Webook/actions/workflows/maven.yml
-2. click on run workflow
-
-3. the tests will run and the results will be stored as in this example:
-   https://github.com/khalid-moh193/Webook/actions/runs/10711181366
